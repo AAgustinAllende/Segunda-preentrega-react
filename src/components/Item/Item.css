@@ -1,0 +1,12 @@
+.cardB{
+    width: 230px;
+    border: 1px solid lightgray;
+    
+}
+.envioFree, .fav{
+    width: 30px;
+    height: 30px;
+}
+a{
+    text-decoration: none;
+}

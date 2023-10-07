@@ -1,8 +1,6 @@
-import React from 'react'
 import "./Item.css"
-import { Link } from 'react-router-dom'
 
-export default function Item({id,titulo,precio,categoria,imagen}) {
+const Item = ({id,titulo,precio,imagen}) => {
   return (
     
     <div className="cardB">
@@ -14,9 +12,11 @@ export default function Item({id,titulo,precio,categoria,imagen}) {
       <h6 className="card-text">{precio}</h6>
       <a href=''>🤍Agregar a Favoritos</a>
       <button className='btn btn-info'>
-        <Link to={`/item/${id}`}>Ver detalles »</Link>
+        Ver detalles »
         </button>
     </div>
   </div>
   )
 }
+
+export default Item
